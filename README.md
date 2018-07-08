@@ -5,5 +5,6 @@ first in each of the folder ther will be a file folder_name_scrapper.py open\edi
 change the path of pytesseract.pytesseract.teseract_cmd to where ever you have downloaded and installed pytesseract.exe into
 after that change the path in "jpgs" and "pngs" to where ever you are running your script\project
 other then that you are good to go.
-You also need to install PhanotmJS in your Machine and then copy PhantomJS.exe in every folder You can read more about phantomJS here:http://phantomjs.org
+You also need to install PhanotmJS in your Machine just copy PhantomJS.exe in every folder.
+You can read more about phantomJS here:http://phantomjs.org
 You need to install Pytesseract on your machine as well if you want the image processing to work, you can download and install that from here:https://pypi.org/project/pytesseract/

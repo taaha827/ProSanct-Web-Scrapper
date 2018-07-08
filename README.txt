@@ -1,7 +1,7 @@
 # ProSanct-Web-Scrapper
 This is a repository which contains the project, that will be used to scrape different website and then finding which brands are having sales which then we can tell the customers\users of our app about.
 If you are looking to set up on your own device then you need to follow some steps which are:
-Step 1:first you need to install the following packages: image, BeautifulSoup4, request selenium, pymsql, glob, pytesseract
+Step 1:first you need to install the following packages: image, BeautifulSoup4,tesseract, request selenium, pymsql, glob, pytesseract
 Step 1.1:To  install them go to the folder where you have installed python go to the Scripts folder run cmd there and write 
 pip install *insert package_name_here*
 Step 2:First in each of the folder ther will be a file *insert folder_name*_scrapper.py file open\edit it and change 

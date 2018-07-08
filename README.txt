@@ -9,4 +9,7 @@ after that change the path in variables  "jpgs" and "pngs" to where ever you are
 Step 3:You also need to install PhanotmJS in your Machine, just copy PhantomJS.exe from the current repository in every folder.
        You can read more about phantomJS here:http://phantomjs.org
 Step 4:You need to create a database named daraz on your local host wamp server and then add a table daraz_data to it with the schema id(primary), FilePath(varchar),TextRead(varchar) with collation of TextRead to utf8_general_ci, in the last build this step will be automated but for now this has to be done manually 
-Step 5: The last step is to change the file path in sys.append() to wherever you have stored the project in ever folder_name_scrapper.py
+Step 5: Change the file path in sys.append() to wherever you have stored the project in ever folder_name_scrapper.py
+Step 6: Unzip the tesseract_win64 file and copy it in your device, find tesseract.exe in extracted files and use its file path and paste in the pytesseract.pytesseract.tesseract_cmd variable in every *folder_name*_scrapper.py
+Step 7: Create a folder tessdata in the folder where you have extracted tesseract64.zip and paste eng.traineddata there
+Step 8: add a system environmental variable named "TESSDATA_PREFIX" and paste the path to tessdata folder

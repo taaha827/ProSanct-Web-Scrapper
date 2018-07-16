@@ -1,0 +1,26 @@
+*Read this before Doing anything*
+
+First of all download this rar file and extract it in your wamp servers www folder
+ after that from the root folder download phantom js.exe and after that download the tesseract-win64.rar file extract it in C:\Program Files\tesseract
+ and then place eng.traineddata file in tesseract\tessdata
+ after doing to that create an environment variable in your Computer settings named TESSDATA_PREFIX and place the path to eng.trainneddata like C:\Program Files\tesseract\tessdata
+ afte all that install the necessary libraries which are mentioned in the readme file in the root directory . After that just open the scrapping_image.py and change the 
+ appropiate paths everywhere. In the variable pytesseract.pytesseract.tesseract_cmd place the file path to tesseract.exe which you extracted earlier.
+ Then just update the specific paths accordingly.
+ Then from the list you have create a folder and create website_name_scrapper.py and place the code below:
+ import sys
+
+from bs4 import BeautifulSoup
+
+#give the appropiate path but you may not have to change this if you follow the instruction
+sys.path.append('C:\\wamp64\\www\\ProSanct-Web-Scrapper-master')
+import scrapping_image
+
+if __name__ == "__main__":
+     obj = scrapping_image.scraping("Website URL ", "Website name","Leave this empty","Leave this empty")
+     #obj.getresponse()
+     #obj.extractresponse()
+     #obj.specificextraction("Specific tag you want to target for images","The attribute which you want to use to specify that ","Value of that")
+     #obj.saving_image()
+     obj.FilePathReader("name of the folder you have placed the scripts in")
+     obj.checkaccuracy()
